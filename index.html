@@ -1,111 +1,398 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Sou o desenvolvedor de sistemas web Felipe Mateus a trabalho com tecnologia desde 2012, criando aplicações web e mantendo sistemas." />
-        <meta name="author" content="Felipe Mateus" />
-        <meta name="statvooVerification" content="b027de7813ac9fbf210f8f4c6f545ab1" /> 
-        <title>Felipe Mateus - Desenvolvedor Web</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />  
-        <link href="https://fonts.gstatic.com/s/catamaran/v15/o-0IIpQoyXQa2RxT7-5r5TRASf6M7Q.woff2" rel="preload" as="font" />
-        <link href="https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2" rel="preload" as="font" />
-        <link href="https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2" rel="preload" as="font" />
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&display=swap" onload="this.rel = 'stylesheet'"  rel="preload"  as="style" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" onload="this.rel = 'stylesheet'"  rel="preload"  as="style" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.min.css"  rel="preload" as="style"/>
-        <link href="css/styles.min.css"  rel="stylesheet"   />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYVX2XQTKE"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Felipe Mateus | Desenvolvedor Web & Especialista em Soluções Digitais
+    </title>
+    <meta
+      name="description"
+      content="Transforme seu negócio com sites de alta performance, lojas virtuais e sistemas web personalizados. Desenvolvedor com mais de 12 anos de experiência."
+    />
+    <meta name="author" content="Felipe Mateus Rocha Martins" />
+    <link rel="canonical" href="https://felipemateus.com.br" />
+    <link rel="preload" src="https://cdn.tailwindcss.com" as="script" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preload" href="https://unpkg.com/lucide@latest" as="script" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #2563eb, #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 100;
+        transition: transform 0.3s ease;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JYVX2XQTKE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-JYVX2XQTKE');
-        </script>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">Felipe Mateus</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="https://felipemateus.com/blog">Blog</a></li>
-                    </ul>
-                </div>
+      gtag("config", "G-JYVX2XQTKE");
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Schema Felipe Mateus (Empresa) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Felipe Mateus",
+      "url": "https://felipemateus.com.br",
+      "logo": "https://felipemateus.com.br/assets/img/logo.png",
+      "email": "comercial@felipemateus.com",
+      "telephone": "+55-21-2042-3551",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "25260-000",
+        "streetAddress": "Av. Automovel Clube, 922"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/eufelipemateus"
+      ]
+    }
+    </script>
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/+552120423551"
+      target="_blank"
+      class="whatsapp-float bg-green-500 p-4 rounded-full shadow-2xl flex items-center justify-center text-white"
+    >
+      <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0 flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold"
+            >
+              F
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
-                <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Felipe Mateus</h1>
-                    <h2 class="masthead-subheading mb-0">Desenvolvedor de Sistemas</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Saiba Mais</a>
-                </div>
+            <span class="text-xl font-bold tracking-tight">Felipe Mateus</span>
+          </div>
+          <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#inicio" class="hover:text-blue-600 transition">Início</a>
+            <a href="#servicos" class="hover:text-blue-600 transition"
+              >Serviços</a
+            >
+            <a
+              href="https://felipemateus.com/solicite-orcamento"
+              class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition"
+              >Solicitar Orçamento</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6"
+        >
+          Desenvolvedor de Sistemas desde 2012
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+          Transforme visitantes em clientes com <br />
+          <span class="gradient-text">Sites de Alta Performance</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+          Desenvolvo Landing Pages, E-commerces e Sistemas sob medida que
+          automatizam seu negócio e aumentam sua lucratividade.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="https://felipemateus.com/solicite-orcamento"
+            class="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 shadow-lg shadow-blue-200 transition"
+          >
+            <i data-lucide="send" class="w-5 h-5"></i> Quero um Orçamento Grátis
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div
+          class="mt-16 flex flex-wrap justify-center gap-8 opacity-60 grayscale"
+        >
+          <div class="flex items-center gap-2">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+            <span class="font-semibold">Velocidade Máxima</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+            <span class="font-semibold">Segurança Garantida</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+            <span class="font-semibold">100% Responsivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Como posso ajudar sua empresa?
+          </h2>
+          <p class="text-gray-600">
+            Soluções tecnológicas focadas em resultados de negócio.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:border-blue-300 hover:shadow-xl transition group"
+          >
+            <div
+              class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition"
+            >
+              <i data-lucide="layout" class="w-8 h-8"></i>
             </div>
-        </header>
-        <!-- Content section 1-->
-        <section id="scroll">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.webp" width="584" height="189" alt="Imagem de sites multi dispositivos" /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 align="center" class="display-4">Criação de Sites</h2>
-                            <p align="center">Trabalho com programação web desde de 2012 e crio landing page, websites e sistemas personalizados para a sua empresa.</p>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-xl font-bold mb-3">Landing Pages</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              Páginas de vendas otimizadas para converter tráfego do Google e
+              Meta Ads em leads reais.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i> Foco
+                em Conversão
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                Carregamento Instantâneo
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:border-blue-300 hover:shadow-xl transition group"
+          >
+            <div
+              class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:bg-purple-600 group-hover:text-white transition"
+            >
+              <i data-lucide="shopping-cart" class="w-8 h-8"></i>
             </div>
-        </section>
-        <!-- Content section 2-->
-        <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 ">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.webp" width="520" height="280" alt="Trabalho." /></div>
-                    </div>
-                    <div class="col-lg-6 ">
-                        <div class="p-5">
-                            <h2 align="center" class="display-4">Programação</h2>
-                            <p align="center"> Contrate para reforçar a mão de obra e completar equipe de desenvolvedores.</p>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-xl font-bold mb-3">Lojas Virtuais</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              E-commerces completos com integração de Pix, Mercado Pago,
+              Correios e gestão de estoque.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                Gestão Simplificada
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                Checkout Transparente
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:border-blue-300 hover:shadow-xl transition group"
+          >
+            <div
+              class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition"
+            >
+              <i data-lucide="code-2" class="w-8 h-8"></i>
             </div>
-        </section>
-        <!-- Content section 3-->
-        <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.webp" width="500" height="320" alt="Ecommerce imagem ilustrativa de compras online." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 align="center" class="display-4">Ecommerce</h2>
-                            <p align="center">Crie website para o seu ecommerce para vender os seus produtos e atrai clientes.  Crio loja online, serviços de loja com frete, com pedido de orçamentos, integração com facebook e google e muito mais.</p>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-xl font-bold mb-3">Sistemas Web</h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              Sistemas sob medida para automação de processos internos,
+              Dashboards e ERPs personalizados.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                Automação de Processos
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                Escalabilidade
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="py-20 bg-gray-900 text-white overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="md:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Por que me escolher para o seu próximo projeto?
+          </h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+              >
+                <i data-lucide="history" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-blue-400">
+                  12+ Anos de Experiência
+                </h4>
+                <p class="text-gray-400">
+                  Desenvolvendo soluções robustas e modernas para empresas de
+                  todos os tamanhos.
+                </p>
+              </div>
             </div>
-        </section>
-      
-        <section class="text-center btn-action ">
-            <div class="container px-5">
-                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="https://felipemateus.com/solicite-orcamento">Solicite um Orçamento sem custo</a>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
+              >
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-blue-400">
+                  Foco Total no Cliente
+                </h4>
+                <p class="text-gray-400">
+                  Entendo seu modelo de negócio antes de escrever a primeira
+                  linha de código.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-black">
-           <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; &bull; <a href="https://felipemateus.com/">Felipe Mateus</a>  &bull; 2022-2023</p></div>
-        </footer>
-    </body>
+          </div>
+        </div>
+        <div class="md:w-1/2 relative">
+          <!-- Mockup/Illustration Placeholder -->
+          <div class="bg-blue-600/20 p-8 rounded-3xl border border-blue-500/30">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+              alt="Work Desk"
+              class="rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Magnet Section -->
+    <section class="py-16 bg-blue-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Receba novidades e dicas exclusivas!
+        </h2>
+        <p class="mb-8 opacity-90 text-lg">
+          Cadastre seu e-mail para receber conteúdos e oportunidades sobre soluções digitais para o seu negócio.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
+          <input
+            type="email"
+            placeholder="Seu melhor e-mail"
+            class="flex-1 px-6 py-4 rounded-xl text-gray-900 focus:outline-none"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-black transition"
+          >
+            Quero Receber
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-gray-50 py-20 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Vamos tirar sua ideia do papel?</h2>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12"
+        >
+          <div class="flex items-center gap-3">
+            <i data-lucide="mail" class="text-blue-600"></i>
+            <span class="font-medium text-lg">contato@felipemateus.com.br</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i data-lucide="phone" class="text-blue-600"></i>
+            <span class="font-medium text-lg">+55 (21) 2042-3551</span>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-6 mb-8">
+          <a
+            href="https://br.linkedin.com/in/eufelipemateus"
+            class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:text-blue-600 transition shadow-sm"
+            ><i data-lucide="linkedin" class="w-5 h-5"></i
+          ></a>
+          <a
+            href="https://github.com/eufelipemateus"
+            class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:text-blue-600 transition shadow-sm"
+            ><i data-lucide="github" class="w-5 h-5"></i
+          ></a>
+          <a
+            href="https://instagram.com/eufelipemateus"
+            class="w-10 h-10 bg-white border rounded-full flex items-center justify-center hover:text-blue-600 transition shadow-sm"
+            ><i data-lucide="instagram" class="w-5 h-5"></i
+          ></a>
+        </div>
+
+        <p class="text-gray-500 text-sm">
+          &copy; 2023 - 2025 &bull;
+          <a
+            href="https://felipemateus.com/eufelipemateus"
+            class="text-blue-600 hover:underline"
+            >Felipe Mateus</a
+          >.<br />
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
