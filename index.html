@@ -65,27 +65,81 @@
   <body class="bg-gray-50 text-gray-900">
     <!-- Schema Felipe Mateus (Empresa) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Felipe Mateus",
-      "url": "https://felipemateus.com.br",
-      "logo": "https://felipemateus.com.br/assets/img/logo.png",
-      "email": "comercial@felipemateus.com",
-      "telephone": "+55-21-2042-3551",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BR",
-        "addressLocality": "Rio de Janeiro",
-        "addressRegion": "RJ",
-        "postalCode": "25260-000",
-        "streetAddress": "Av. Automovel Clube, 922"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/eufelipemateus"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Felipe Mateus",
+        "url": "https://felipemateus.com.br",
+        "logo": "https://felipemateus.com.br/assets/img/logo.png",
+        "email": "comercial@felipemateus.com",
+        "telephone": "+55-21-2042-3551",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR",
+          "addressLocality": "Rio de Janeiro",
+          "addressRegion": "RJ",
+          "postalCode": "25260-000",
+          "streetAddress": "Av. Automovel Clube, 922"
+        },
+        "sameAs": ["https://www.linkedin.com/company/eufelipemateus"]
+      }
     </script>
+
+    <!-- Loading Overlay -->
+    <div
+      id="loading-overlay"
+      style="
+        position: fixed;
+        z-index: 9999;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 1);
+        transition: opacity 0.3s;
+      "
+    >
+      <div style="text-align: center">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 50 50"
+          style="margin: auto; display: block"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+            fill="none"
+            stroke="#1e40af"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="31.4 31.4"
+            stroke-dashoffset="0"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 25 25"
+              to="360 25 25"
+              dur="1s"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>
+        <div
+          style="
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #1e40af;
+            font-size: 1.2rem;
+          "
+        >
+          Carregando...
+        </div>
+      </div>
+    </div>
+
     <!-- WhatsApp Button -->
     <a
       href="https://wa.me/+552120423551"
@@ -325,7 +379,8 @@
           Receba novidades e dicas exclusivas!
         </h2>
         <p class="mb-8 opacity-90 text-lg">
-          Cadastre seu e-mail para receber conteúdos e oportunidades sobre soluções digitais para o seu negócio.
+          Cadastre seu e-mail para receber conteúdos e oportunidades sobre
+          soluções digitais para o seu negócio.
         </p>
         <form class="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto">
           <input
@@ -393,6 +448,14 @@
     <script>
       // Initialize Lucide Icons
       lucide.createIcons();
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loading-overlay").style.opacity = "0";
+          setTimeout(function () {
+            document.getElementById("loading-overlay").style.display = "none";
+          }, 300);
+        }, 100);
+      });
     </script>
   </body>
 </html>
