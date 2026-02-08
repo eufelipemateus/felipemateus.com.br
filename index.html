@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felipe Mateus | Consultoria Web & Desenvolvimento de Sistemas</title>
     <meta name="description" content="Especialista em APIs, automações, web scraping e sistemas personalizados em Duque de Caxias. Mais de 12 anos transformando dados em soluções." />
+    <meta name="og:title" content="Felipe Mateus | Consultoria Web & Desenvolvimento de Sistemas" />
+    <meta name="og:description" content="Especialista em APIs, automações, web scraping e sistemas personalizados em Duque de Caxias. Mais de 12 anos transformando dados em soluções." />
+    <meta name="og:url" content="https://felipemateus.com.br" />
+
+    <link rel="preload" href="./assets/app.css" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" as="style" />
     <link rel="stylesheet" href="./assets/app.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    
     <style>
       body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
       .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
@@ -27,7 +32,7 @@
       }
       .animate-blob { animation: blob 7s infinite; }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TT362X9R"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TT362X9R" defer></script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -206,6 +211,10 @@
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
-    <script>lucide.createIcons();</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        lucide.createIcons();
+      });
+    </script>
   </body>
 </html>

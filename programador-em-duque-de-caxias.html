@@ -5,10 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Consultoria de Programação e Desenvolvimento Web em Duque de Caxias | Felipe Mateus</title>
 		<meta name="description" content="Procurando um programador em Duque de Caxias? Felipe Mateus oferece soluções em Laravel, Python e sites de alta performance para empresas da Baixada Fluminense." />
-		<link rel="canonical" href="https://felipemateus.com.br/programador-em-duque-de-caxias" />
+		<link rel="canonical" href="https://felipemateus.com.br/programador-em-duque-de-caxias.html" />
+        <link rel="preload" href="./assets/app.css" as="style" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" />
         <link rel="stylesheet" href="./assets/app.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        <script src="https://unpkg.com/lucide@latest"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+        <script src="https://unpkg.com/lucide@latest" defer></script>
         <style>
 			body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #222; }
 			.gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -156,8 +158,9 @@
         </footer>
 
         <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
         </script>
 	</body>
 </html>
