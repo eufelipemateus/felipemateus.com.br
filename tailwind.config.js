@@ -1,7 +1,8 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./**/*.html",
+    "./index.html",
+    "./programador-em-duque-de-caxias.html",
     "./src/**/*.css",
   ],
   safelist: [
