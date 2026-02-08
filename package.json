@@ -1,12 +1,10 @@
-{
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "autoprefixer": "^10.4.24",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.18"
+{  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
   },
   "scripts": {
-    "build:tailwind": "npx postcss src/tailwind.css -o assets/app.css"
+  "dev": "tailwindcss -i ./src/tailwind.css -o ./assets/app.css --watch",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./assets/app.css --minify" 
   }
 }
