@@ -13,6 +13,9 @@
 			body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #222; }
 			.gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 			.glass { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); }
+            .gradient-text{background:linear-gradient(90deg,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+            .whatsapp-float{position:fixed;bottom:30px;right:30px;z-index:100;transition:transform .3s ease}
+            .whatsapp-float:hover{transform:scale(1.1)}
 		</style>
 
 	</head>
@@ -64,7 +67,16 @@
                 }
             }
         </script>
-
+        <!-- WhatsApp Button -->
+        <a
+            href="https://wa.me/+552120423551"
+            target="_blank"
+            class="whatsapp-float bg-green-500 p-4 rounded-full shadow-2xl flex items-center justify-center text-white"
+            aria-label="Conversar no WhatsApp"
+            rel="noopener noreferrer"
+        >
+            <i data-lucide="message-circle" class="w-8 h-8" aria-hidden="true"></i>
+        </a>
         <nav class="fixed w-full z-50 glass border-b border-gray-200" aria-label="Menu principal">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16 items-center">
@@ -73,7 +85,7 @@
                         <span class="text-xl font-bold tracking-tight">Felipe Mateus</span>
                     </a>
                 <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="/" class="text-blue-600 font-semibold hover:underline" aria-label="Voltar ao site principal">Voltar ao site</a>
+                    <a href="/" class="text-blue-600 font-semibold hover:underline" aria-label="Voltar ao Início">Voltar ao Início</a>
                 </div>
             </div>
         </nav>
@@ -133,14 +145,6 @@
         <script>
         // Initialize Lucide Icons
         lucide.createIcons();
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-            document.getElementById("loading-overlay").style.opacity = "0";
-            setTimeout(function () {
-                document.getElementById("loading-overlay").style.display = "none";
-            }, 300);
-            }, 100);
-        });
         </script>
 	</body>
 </html>
